@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Locate every restaurant to get everything you crave everywhere and everytime. We have it all">
+    <meta name="theme-color" content="#FFFDD0"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./icon.png"/>
+    <link rel="manifest" href="./app.webmanifest">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+    
+    <title>Restaurant Map</title>
+</head>
+<body>
+  <a class="skip-link" tabindex="0">Menuju ke konten</a>
+
+  <header class="header">
+    <app-bar></app-bar>
+  </header>
+
+  <nav id="drawer" class="nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#">Home</a></li>
+      <li class="nav__item"><a href="#/explore">Explore</a></li>
+      <li class="nav__item"><a href="#/favorites">Favorites</a></li>
+      <li class="nav__item"><a href="https://github.com/hagiaz">About Us</a></li>
+    </ul>
+  </nav>
+  
+  <div class="hero">
+    <picture class="hero__image">
+      <source media="(max-width: 600px)" srcset="../hero/hero-image-min.jpg">
+      <img src="../hero/hero-image.jpg"" alt="hero-image">
+    </picture>
+    <div class="hero__inner">
+      <h1 class="hero__title">We've Got Tons of Restaurants.</h1>
+      <p class="hero__tagline">Do you want to eat at a western restaurant? or maybe want to taste Indonesian food?<br>or just relaxing coffee?
+        Rest Assured, we have it all here.</p>
+    </div>
+  </div>
+
+  <main id="mainContent" tabindex="0"></main>
+  
+  <footer class="footer" id="footer">
+    <app-footer></app-footer>
+  </footer>
+</body>
+</html>

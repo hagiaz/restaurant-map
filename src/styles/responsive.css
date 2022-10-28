@@ -1,0 +1,177 @@
+@media screen and (max-width: 499px) {
+    .nav {
+      z-index: 10;
+      background-color: #fff;
+      width: 300px;
+      position: absolute;
+  
+      -webkit-transform: translate(-300px, 0);
+      transform: translate(-300px, 0);
+  
+      transition: transform 0.3s ease;
+    }   
+  
+    .open {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      width: 100%;
+    }
+  
+    .nav__item {
+      display: list-item;
+      border-bottom: 1px solid #E0E0E0;
+      width: 100%;
+      text-align: center;
+      background-color: #FFFDD0;
+    }
+  
+    .nav__item a{
+      color: black;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .restaurants {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 16px;
+    }
+
+    .resto-item__header__poster {
+      border-radius: 10px;
+      margin-top: 15px;
+      height: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .hero__title {
+      color: #000;
+      font-weight: 500;
+      font-size: 28px;
+      padding: 0 10px;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #99fff1, 0 0 40px #99fff1, 0 0 50px #99fff1, 0 0 60px #99fff1, 0 0 70px #99fff1;
+    }
+    
+    .hero__tagline {
+      color: #fff;
+      margin-top: 16px;
+      font-size: 14px;
+      font-weight: lighter;
+      text-shadow: 2px 2px 2px black;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .header__logo{
+      margin: 50px 0px 10px 0px;
+    }
+  
+    .header__title{
+      margin-top: 0px;
+      max-width: 100%;
+    }
+  
+    footer p{
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px 0px 20px 0px;
+      color: white;
+      background-color: #2E2252;
+    }
+  
+    .fa {
+      padding: 10px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+      background: white;
+      color: #212529;
+      margin: 5px 15px 10px 15px;
+    }  
+
+    .resto_poster{
+      max-height: 10rem;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0px 0px 23px 20px rgba(0,0,0,0.1);
+    }
+  }
+    
+  @media screen and (min-width: 500px) {
+    #hamburgerButton {
+      display: none;
+      height: 50px;
+    }
+  
+    .nav{
+      top: 0;
+      position: sticky;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .resto-item__header__poster {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .resto-item__content {
+      width: 95%;
+    }
+  
+    .resto-item__header__rating__score {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .restaurants {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 16px;
+    }
+
+    .resto-item {
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .resto-item__header__poster {
+      border-radius: 10px;
+      margin-top: 5px;
+      height: 100%;
+    }
+
+    .resto_menu{
+      grid-template-columns: 1fr;
+    }
+
+    .resto_foods{
+      margin-bottom: 20px;
+    }
+
+    .resto_reviews{
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+    
+  @media screen and (min-width: 800px) {
+    .nav__list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+    
+  @media screen and (min-width: 1200px) {
+    main {
+      max-width: 85%;
+    }
+  }
